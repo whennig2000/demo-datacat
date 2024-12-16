@@ -1,0 +1,9 @@
+{
+  "afo": "http://purl.allotrope.org/ontologies/result#",
+  "schema": "https://schema.org/",
+  "dataset_type": "schema:Text",
+  "identifier": "schema:identifier",
+  "path_posix": "afo:AFR_0001928",
+  "version": "schema:version",
+  "url": "schema:contentUrl"
+}
