@@ -1,0 +1,5 @@
+[submodule "data"]
+	path = data
+	url = https://github.com/whennig2000/data.git
+	datalad-id = 87bb35d7-555a-4f60-9788-a31082cc2112
+	datalad-url = https://github.com/whennig2000/data.git
