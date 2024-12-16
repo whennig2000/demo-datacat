@@ -35,7 +35,7 @@ from queries import (
     repr_uberon,
 )
 
-def get_tabby_metadata(tabby_path, dataset_path=None, id_source='tabby_mint', convention='tby-abcdjv0'):
+def get_tabby_metadata(tabby_path, dataset_path=None, id_source='tabby_mint', convention='tby-r2d2v0'):
     # Provide EITHER tabby_path OR dataset_path
 
     # Some validation
@@ -44,6 +44,7 @@ def get_tabby_metadata(tabby_path, dataset_path=None, id_source='tabby_mint', co
             installed=True, purpose="extract tabby metadata", require_id=True
         )(dataset_path).ds
         tabby_path = dataset.pathobj / f'.datalad/tabby/self/dataset@{convention}.tsv'
+        print(tabby_path)
         assert tabby_path.exists()
         if id_source != "datalad_dataset":
             print(f"WARNING: argument 'id-source' provided/defaulted as '{id_source}' but setting it to 'datalad_dataset' "

@@ -17,7 +17,8 @@ def get_super_metadata(dataset):
     tabby_record = get_tabby_metadata(
         tabby_path=None,
         dataset_path=dataset.pathobj,
-        id_source='datalad_dataset')
+        id_source='datalad_dataset',
+        convention='tby-r2d2v0')
     # return both, and dataset
     return core_record, tabby_record
 

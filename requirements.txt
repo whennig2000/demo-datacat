@@ -1,0 +1,5 @@
+datalad-next
+datalad-catalog @ git+https://github.com/datalad/datalad-catalog.git
+datalad-tabby @ git+https://github.com/psychoinformatics-de/datalad-tabby.git@main
+pyld
+requests_cache
